@@ -207,8 +207,8 @@ export default function LaporanTab({ transactions }: Props) {
       </div>
 
       {/* List transaksi */}
-      <Card className="border-none bg-transparent shadow-none">
-        <CardHeader className="pt-0">
+      <div className="border-none bg-transparent shadow-none">
+        <CardHeader className="mb-3">
           <CardTitle className="text-base">
             Riwayat{" "}
             <span className="text-zinc-400 font-normal text-sm">
@@ -216,7 +216,7 @@ export default function LaporanTab({ transactions }: Props) {
             </span>
           </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-3">
+        <div className="space-y-3">
           {filtered.length === 0 ? (
             <p className="text-zinc-500 text-center p-8 bg-white rounded-lg border border-dashed">
               Belum ada transaksi.
@@ -264,8 +264,8 @@ export default function LaporanTab({ transactions }: Props) {
               </div>
             ))
           )}
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }

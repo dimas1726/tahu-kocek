@@ -114,7 +114,7 @@ export default function PengeluaranTab({ onSuccess }: Props) {
 
         <Button
           onClick={simpanPengeluaran}
-          className={`w-full h-14 text-lg shadow-md ${tipeKeluar === "tarik" ? "bg-amber-600 hover:bg-amber-700" : "bg-rose-600 hover:bg-rose-700"}`}
+          className={`w-full  ${tipeKeluar === "tarik" ? "bg-amber-600 hover:bg-amber-700" : "bg-rose-600 hover:bg-rose-700"}`}
         >
           {tipeKeluar === "tarik"
             ? "Simpan Penarikan Laba"
