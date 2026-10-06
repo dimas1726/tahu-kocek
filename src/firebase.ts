@@ -2,13 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCyOhZaNkFcENK2MjosgeD6qm0DfTGBrRs",
-  authDomain: "tahu-kocek-app.firebaseapp.com",
-  projectId: "tahu-kocek-app",
-  storageBucket: "tahu-kocek-app.firebasestorage.app",
-  messagingSenderId: "866596739681",
-  appId: "1:866596739681:web:ab433a691b66946e1ba820",
-  measurementId: "G-MRPQS87S68",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
